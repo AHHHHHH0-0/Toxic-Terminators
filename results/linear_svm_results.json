@@ -1,0 +1,20 @@
+{
+  "macro_f1": 0.493,
+  "macro_auc_roc": 0.956,
+  "per_label_auc_roc": {
+    "toxic": 0.942,
+    "severe_toxic": 0.968,
+    "obscene": 0.952,
+    "threat": 0.978,
+    "insult": 0.945,
+    "identity_hate": 0.948
+  },
+  "per_label_f1": {
+    "toxic": 0.659,
+    "severe_toxic": 0.348,
+    "obscene": 0.67,
+    "threat": 0.346,
+    "insult": 0.586,
+    "identity_hate": 0.347
+  }
+}
