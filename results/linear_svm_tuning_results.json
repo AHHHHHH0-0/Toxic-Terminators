@@ -1,53 +1,5 @@
 [
   {
-    "max_features": 5000,
-    "C": 0.1,
-    "macro_precision": 0.348,
-    "macro_recall": 0.816,
-    "macro_f1": 0.468,
-    "macro_auc_pr": 0.591,
-    "per_label_auc_pr": {
-      "toxic": 0.825,
-      "severe_toxic": 0.402,
-      "obscene": 0.837,
-      "threat": 0.386,
-      "insult": 0.733,
-      "identity_hate": 0.364
-    }
-  },
-  {
-    "max_features": 5000,
-    "C": 1.0,
-    "macro_precision": 0.36,
-    "macro_recall": 0.739,
-    "macro_f1": 0.474,
-    "macro_auc_pr": 0.566,
-    "per_label_auc_pr": {
-      "toxic": 0.816,
-      "severe_toxic": 0.365,
-      "obscene": 0.818,
-      "threat": 0.365,
-      "insult": 0.704,
-      "identity_hate": 0.326
-    }
-  },
-  {
-    "max_features": 5000,
-    "C": 10,
-    "macro_precision": 0.353,
-    "macro_recall": 0.673,
-    "macro_f1": 0.454,
-    "macro_auc_pr": 0.526,
-    "per_label_auc_pr": {
-      "toxic": 0.807,
-      "severe_toxic": 0.309,
-      "obscene": 0.792,
-      "threat": 0.309,
-      "insult": 0.673,
-      "identity_hate": 0.269
-    }
-  },
-  {
     "max_features": 10000,
     "C": 0.1,
     "macro_precision": 0.398,
@@ -141,6 +93,54 @@
       "threat": 0.381,
       "insult": 0.646,
       "identity_hate": 0.279
+    }
+  },
+  {
+    "max_features": 30000,
+    "C": 0.1,
+    "macro_precision": 0.456,
+    "macro_recall": 0.799,
+    "macro_f1": 0.567,
+    "macro_auc_pr": 0.628,
+    "per_label_auc_pr": {
+      "toxic": 0.857,
+      "severe_toxic": 0.425,
+      "obscene": 0.866,
+      "threat": 0.437,
+      "insult": 0.767,
+      "identity_hate": 0.419
+    }
+  },
+  {
+    "max_features": 30000,
+    "C": 1.0,
+    "macro_precision": 0.521,
+    "macro_recall": 0.67,
+    "macro_f1": 0.581,
+    "macro_auc_pr": 0.604,
+    "per_label_auc_pr": {
+      "toxic": 0.842,
+      "severe_toxic": 0.381,
+      "obscene": 0.844,
+      "threat": 0.437,
+      "insult": 0.732,
+      "identity_hate": 0.389
+    }
+  },
+  {
+    "max_features": 30000,
+    "C": 10,
+    "macro_precision": 0.506,
+    "macro_recall": 0.565,
+    "macro_f1": 0.527,
+    "macro_auc_pr": 0.534,
+    "per_label_auc_pr": {
+      "toxic": 0.802,
+      "severe_toxic": 0.279,
+      "obscene": 0.792,
+      "threat": 0.394,
+      "insult": 0.648,
+      "identity_hate": 0.29
     }
   }
 ]
