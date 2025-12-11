@@ -1,4 +1,6 @@
 {
+  "lr": 5e-05,
+  "batch_size": 64,
   "macro_precision": 0.498,
   "macro_recall": 0.439,
   "macro_f1": 0.44,
