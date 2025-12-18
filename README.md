@@ -6,10 +6,10 @@ Course project for CS178 Machine Learning and Data Mining at UCI. We developed, 
 
 This project is a multi-label problem in identifying if any toxicity labels apply to a given comment.
 
-- Data: Comments from Wikipedia talk page. Part of Jigsaw Toxic Comment Classification Challenge on Kaggle
-- Labels: Toxic, Severe Toxic, Obscene, Threat, Insult, and Identity Hate. A single comment can be flagged with more than one category (i.e. toxic and insult) or none.
-- Models: Logistic Regression, Linear SVM, DistilRoBERTa
-- Methods: For each model, we conduct small grid search over hyperparamters of the highest importance, using 4-fold CV
+- **Data**: Comments from Wikipedia talk page. Part of Jigsaw Toxic Comment Classification Challenge on Kaggle
+- **Labels**: Toxic, Severe Toxic, Obscene, Threat, Insult, and Identity Hate. A single comment can be flagged with more than one category (i.e. toxic and insult) or none.
+- **Models**: Logistic Regression, Linear SVM, DistilRoBERTa
+- **Methods**: For each model, we conduct small grid search over hyperparamters of the highest importance, using 4-fold CV
 
 ## Model Details
 
