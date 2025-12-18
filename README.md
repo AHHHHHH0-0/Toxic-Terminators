@@ -117,7 +117,7 @@ Toxic-Terminators/
 
 ## Oversight
 
-To address the severe class inbalance, we used class-weighted loss for training logistic regression and linear SVM ```class_weight = "balanced"```, but we did not do that for DistilRoBERTa ```loss = BCEWithLogitsLoss(pos_weight=class_ratio)```. if implemented, this should allow the transformer model to perform even better over classical ML baselines. 
+To address the severe class inbalance, we used class-weighted loss for training logistic regression and linear SVM ```class_weight = "balanced"```, but we did not do that for DistilRoBERTa ```loss = BCEWithLogitsLoss(pos_weight=class_ratio)```. If implemented, this should allow the transformer model to perform even better over classical ML baselines. 
 
 Furthermore, post-training threshold tuning ```threshold[label] = argmax_F1(precision_recall_curve)``` could also improve classification power by effectively raising recall for rare classes, our toxic labels. 
 
