@@ -37,9 +37,9 @@ This project is a multi-label problem in identifying if any toxicity labels appl
 
 ## Data
 
-Dataset from the Jigsaw Toxic Comment Classification Challenge (Kaggle), containing Wikipedia talk page comments:
+### Training and test dataset after preprocessing
 
-| Split | Samples | Labels |
+| Data  | Samples | Labels |
 | ----- | ------- | ------ |
 | Train | 159,571 | 6      |
 | Test  | 63,978  | 6      |
@@ -55,7 +55,7 @@ Dataset from the Jigsaw Toxic Comment Classification Challenge (Kaggle), contain
 | identity_hate | 1,405            | 0.88%      |
 | threat        | 478              | 0.30%      |
 
-**Class Imbalance**: 89.83% of comments have no toxic labels, indicating severe class imbalance. Threat and severe_toxic are particularly rare, which presents challenges for model training and evaluation.
+**Class Imbalance**: 89.83% of comments have no toxic labels, indicating severe class imbalance. 
 
 ## Project Structure
 
