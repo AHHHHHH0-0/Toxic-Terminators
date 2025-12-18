@@ -114,3 +114,11 @@ Toxic-Terminators/
 **3. Rare Label Challenge**: Severe_toxic (0.329 AUC-PR) and threat (0.479 AUC-PR) show significantly lower performance across all models because these labels suffer from insufficient training examples. This is particularly problematic for DistilRoBERTa which requires more data to learn effective representations. The macro-averaged metrics are heavily impacted by these weak labels.
 
 **4. Computational vs Performance Trade-off**: While DistilRoBERTa requires GPU training (>1 hour) and significantly slower inference (>20 min vs <2 min for traditional ML models), the substantial gains in F1 (0.604 vs 0.485) and AUC-PR (0.630 vs 0.576) could justify the computational cost, if classification quality is prioritized over latency.
+
+## Oversight
+
+To address the severe class inbalance, we used class-weighted loss for training logistic regression and linear SVM ```class_weight = "balanced"```, but we did not do that for DistilRoBERTa ```loss = BCEWithLogitsLoss(pos_weight=class_ratio)```. if implemented, this should allow the transformer model to perform even better over classical ML baselines. 
+
+Furthermore, post-training threshold tuning ```threshold[label] = argmax_F1(precision_recall_curve)``` could also improve classification power by effectively raising recall for rare classes, our toxic labels. 
+
+
